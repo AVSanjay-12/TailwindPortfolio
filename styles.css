@@ -1,0 +1,43 @@
+html,body{
+    scroll-behavior: smooth;
+}
+
+/* Ham menu */
+.hamburger{
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    transition: all 0.25s;
+    position: relative;
+}
+
+.ham-top, .ham-mid, .ham-bot{
+    position: absolute;
+    top:0;
+    left:0;
+    width:24px;
+    height: 2px;
+    background-color: black;
+    transform: rotate(0);
+    transition: all 0.5s;
+}
+.ham-mid{
+    transform: translateY(7px);
+}
+.ham-bot{
+    transform: translateY(14px);
+}
+.open{
+    transform: rotate(90deg);
+    transform: translateY(0px) ;
+}
+.open .ham-top{
+    transform: rotate(45deg) translateY(6px) translateX(6px);
+}
+.open .ham-mid{
+    display: none;
+}
+.open .ham-bot{
+    transform: rotate(-45deg ) translateY(6px) translateX(-6px);
+}
+

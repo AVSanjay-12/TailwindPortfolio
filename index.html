@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="styles.css" />
+    <title>Sanjay A V's Portfolio Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="font-Roboto">
+    <!-- Header -->
+    <header class="bg-[#94B49F]">
+      <nav class="mx-auto relative pl-6 pt-6 pb-4 md:p-4 w-[100%] md:w-[75%]">
+        <div class="hidden justify-between md:flex">
+          <div class="flex space-x-10">
+            <a
+              class="hover:text-[#DF7861] hover:scale-110 transition duration-300 my-auto text-2xl font-semibold"
+              href="#about"
+              >About</a
+            >
+            <a
+              class="hover:text-[#DF7861] hover:scale-110 transition duration-300 my-auto text-2xl font-semibold"
+              href="#projects"
+              >Projects</a
+            >
+            <a
+              class="hover:text-[#DF7861] hover:scale-110 transition duration-300 my-auto text-2xl font-semibold"
+              href="#skills"
+              >Skills</a
+            >
+          </div>
+          <a
+            type="button"
+            class="rounded-md bg-[#DF7861] transition duration-300 text-white text-2xl py-2 px-4 hover:text-black hover:scale-110 hover:bg-[#ECB390]"
+            href="#contact"
+            >Contact</a
+          >
+        </div>
+
+        <!-- Ham menu icon -->
+        <button
+          id="menu-btn"
+          class="block hamburger md:hidden focus:outline-none"
+        >
+          <span class="ham-top"></span>
+          <span class="ham-mid"></span>
+          <span class="ham-bot"></span>
+        </button>
+
+        <!-- Mobile menu -->
+        <div class="md:hidden">
+          <div
+            id="menu"
+            class="absolute flex-col hidden items-center self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
+          >
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Hero -->
+      <section id="hero ">
+        <div
+          class="flex flex-col-reverse space-y-16 md:px-16 md:py-8 bg-[#FCF8E8] md:space-y-0 md:flex-row"
+        >
+          <div class="w-[100%] px-6 pb-10 mx-auto md:w-1/2">
+            <img
+              class="mx-auto w-[100%] md:w-auto mt-10"
+              src="images/pro.svg"
+              alt=""
+            />
+          </div>
+
+          <div
+            class="text-center mx-auto md:flex md:justify-center md:w-1/2 md:px-0 md:items-center"
+          >
+            <div class="flex flex-col space-y-3">
+              <h1 class="text-2xl md:text-4xl text-gray-700 font-medium">
+                Hi, I'm Sanjay A V
+              </h1>
+              <h1 class="text-4xl md:text-6xl font-black">a <span class="autoType text-[#DF7861]"></span></h1>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <!-- About -->
+    <section id="about" class="py-10 md:pb-4 bg-[#94B49F]">
+      <div class="text-center">
+        <h1
+          class="pb-5 text-4xl font-black text-black md:text-5xl md:pt-4 md:pb-0"
+        >
+          About me
+        </h1>
+      </div>
+      <div class="flex flex-col-reverse px-6 md:space-y-0 md:flex-row md:px-16">
+        <div class="flex flex-col space-y-3 w-full md:w-1/2 place-self-center">
+          <p
+            class="md:text-lg font-semibold text-gray-600 text-center md:text-left md:w-[80%]"
+          >
+            Hello, my name is Sanjay. I am currently(2nd year) pursuing my
+            bachelor's in Electronics and Communication Engineering at
+            Sathyabama Institute of Science and Technology Chennai. I am an
+            aspiring full-stack web developer who is passionate about web
+            development and an enthusiastic coder.
+          </p>
+          <p
+            class="md:text-lg font-semibold text-gray-600 text-center hidden md:w-[80%] md:block md:text-left"
+          >
+            I'm on my journey to become a full-stack web developer and hoping to
+            become proficient in the same by actively learning, practicing and
+            gaining experience.
+          </p>
+        </div>
+
+        <div class="md:w-1/2 mx-auto md:flex md:justify-center md:items-center">
+          <img class="scale-90 md:scale-75" src="images/coding.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="py-10 bg-[#FCF8E8]">
+      <div>
+        <h1 class="font-black text-4xl text-center pb-10 md:text-5xl">
+          Projects
+        </h1>
+      </div>
+
+      <div
+        class="flex flex-col space-y-8 justify-center md:justify-between md:space-y-0 md:space-x-10 px-6 md:flex-row md:px-16"
+      >
+        <div
+          class="pb-6 text-center bg-white shadow-xl rounded-xl overflow-hidden transition duration-300 ease-in-out hover:scale-110 md:w-[90%]"
+        >
+          <img src="images/cariboe.png" alt="" />
+          <h1 class="text-2xl font-bold py-2">Hotel Cariboe</h1>
+          <p class="md:w-2/3 mx-auto text-gray-600">
+            This is a responsive landing page created with Html, Css, Bootstrap.
+          </p>
+          <div class="flex pt-2 flex-row space-x-4 justify-center">
+            <h2 class="font-medium hover:text-[#94B49F]">
+              <a
+                href="https://avsanjay-12.github.io/Hotel-Cariboe/"
+                target="_blank"
+                >Live
+              </a>
+            </h2>
+            <h3 class="font-medium hover:text-[#94B49F]">
+              <a href="https://github.com/AVSanjay-12" target="_blank">Code</a>
+            </h3>
+          </div>
+        </div>
+
+        <div
+          class="pb-6 shadow-xl bg-white text-center rounded-xl overflow-hidden transition duration-300 ease-in-out hover:scale-110 md:w-[90%]"
+        >
+          <img src="images/TailwindLand.png" alt="" />
+          <h1 class="text-2xl font-bold py-2">Manage</h1>
+          <p class="md:w-2/3 mx-auto text-gray-600">
+            This is a responsive landing page created with Html and Tailwindcss.
+          </p>
+          <div class="flex pt-2 flex-row space-x-4 justify-center">
+            <h2 class="font-medium hover:text-[#94B49F]">
+              <a href="https://avsanjay-12.github.io/tindog/" target="_blank"
+                >Live
+              </a>
+            </h2>
+            <h2 class="font-medium hover:text-[#94B49F]">
+              <a href="https://github.com/AVSanjay-12" target="_blank">Code</a>
+            </h2>
+          </div>
+        </div>
+
+        <div
+          class="pb-6 shadow-xl bg-white text-center rounded-xl overflow-hidden transition duration-300 ease-in-out hover:scale-110 md:w-[90%]"
+        >
+          <img src="images/tailwindPort.png" alt="" />
+          <h1 class="text-2xl font-bold py-2">Personal Website</h1>
+          <p class="md:w-2/3 mx-auto text-gray-600">
+            Personal portfolio website created with Html and Tailwindcss.
+          </p>
+          <div class="flex pt-2 flex-row space-x-4 justify-center">
+            <h2 class="font-medium hover:text-[#94B49F]">
+              <a href="https://avsanjay-12.github.io/tindog/" target="_blank"
+                >Live</a
+              >
+            </h2>
+            <h2 class="font-medium hover:text-[#94B49F]">
+              <a href="https://github.com/AVSanjay-12" target="_blank">Code</a>
+            </h2>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h1 class="mt-10 text-center text-2xl hover:text-[#94B49F] md:text-3xl">
+          <a href="https://github.com/AVSanjay-12" target="_blank"
+            >See more...</a
+          >
+        </h1>
+      </div>
+    </section>
+
+    <!-- Skills -->
+
+    <section id="skills" class="py-10 md:pb-4 bg-[#94B49F]">
+      <div>
+        <h1 class="font-black text-4xl text-center pb-10 md:text-5xl">
+          Technical Skills
+        </h1>
+      </div>
+      <div class="px-6 flex flex-col justify-around md:flex-row md:px-16">
+        <div class="flex flex-col pb-6 md:pb-0">
+          <div class="pb-6">
+            <h1 class="text-3xl text-center font-bold text-gray-700">
+              Web Dev:
+            </h1>
+          </div>
+
+          <ul class="space-y-6 md:space-y-8">
+            <li>
+              <img class="w-10 mx-auto" src="images/html.png" alt="" />
+              <h1 class="text-xl text-center md:text-2xl">Html</h1>
+            </li>
+
+            <li>
+              <img class="w-10 mx-auto" src="images/css-3.png" alt="" />
+              <h1 class="text-xl text-center md:text-2xl">CSS</h1>
+            </li>
+
+            <li>
+              <img class="w-10 mx-auto" src="images/bootstrap.png" alt="" />
+              <h1 class="text-xl text-center md:text-2xl">Bootstrap</h1>
+            </li>
+
+            <li>
+              <img class="w-10 mx-auto" src="images/tailwindcss.svg" alt="" />
+              <h1 class="text-xl text-center md:text-2xl">TailwindCss</h1>
+            </li>
+
+            <li>
+              <img class="w-10 mx-auto" src="images/js.png" alt="" />
+              <h1 class="text-xl text-center md:text-2xl">Javascript</h1>
+            </li>
+          </ul>
+        </div>
+
+        <div class="flex flex-col">
+          <div class="pb-6">
+            <h1 class="hid text-3xl font-bold text-gray-700 text-center">
+              Languages:
+            </h1>
+          </div>
+
+          <ul class="space-y-6 md:space-y-8">
+            <li>
+              <img class="w-10 mx-auto" src="images/c-.png" alt="" />
+              <h1 class="text-xl text-center md:text-2xl">C++</h1>
+            </li>
+
+            <li>
+              <img class="w-10 mx-auto" src="images/letter-c.png" alt="" />
+              <h1 class="text-xl text-center md:text-2xl">C</h1>
+            </li>
+
+            <li>
+              <img class="w-10 mx-auto" src="images/java.png" alt="" />
+              <h1 class="text-xl text-center md:text-2xl">Java</h1>
+            </li>
+              <img class="w-10 mx-auto" src="images/python.png" alt="" />
+              <h1 class="text-xl text-center md:text-2xl">Python</h1>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-10 bg-[#FCF8E8]">
+      <div>
+        <h1 class="text-4xl font-black md:text-5xl text-center">Contact</h1>
+      </div>
+      <div class="flex flex-row justify-center space-x-8 mt-10">
+        <a class="w-6 md:w-10 hover:scale-110" href=""><img src="images/linkedin.png" alt=""></a>
+        <a class="w-6 md:w-10 hover:scale-110" href=""><img src="images/gmail.png" alt=""></a>
+        <a class="w-6 md:w-10 hover:scale-110" href=""><img src="images/github-sign.png" alt=""></a>
+      </div>
+    </footer>
+
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+      var typed = new Typed(".autoType", {
+        strings: ["web developer","coder"],
+        typeSpeed:150,
+        backSpeed:150,
+        loop:true
+      })
+    </script>
+  </body>
+</html>
